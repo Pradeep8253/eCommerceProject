@@ -2424,6 +2424,11 @@
       "quantity": 1,
       "user": 2,
       "id": 1
+    },
+    {
+      "product": 5,
+      "quantity": 1,
+      "id": 2
     }
   ],
   "orders": [

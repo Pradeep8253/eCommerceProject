@@ -116,27 +116,15 @@ const router = createBrowserRouter([
   },
   {
     path: "/order-success/:id",
-    element: (
-      <Protected>
-        <OrderSuccessPage></OrderSuccessPage>{" "}
-      </Protected>
-    ),
+    element: <OrderSuccessPage></OrderSuccessPage>,
   },
   {
     path: "/orders",
-    element: (
-      <Protected>
-        <UserOrdersPage></UserOrdersPage>{" "}
-      </Protected>
-    ),
+    element: <UserOrdersPage></UserOrdersPage>,
   },
   {
     path: "/profile",
-    element: (
-      <Protected>
-        <UserProfilePage></UserProfilePage>{" "}
-      </Protected>
-    ),
+    element: <UserProfilePage></UserProfilePage>,
   },
   {
     path: "/logout",

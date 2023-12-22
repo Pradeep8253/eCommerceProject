@@ -23,7 +23,6 @@ export const counterSlice = createSlice({
       state.value += 1;
     },
   },
-
   extraReducers: (builder) => {
     builder
       .addCase(incrementAsync.pending, (state) => {
@@ -36,7 +35,8 @@ export const counterSlice = createSlice({
   },
 });
 
-export const { increment, decrement, incrementByAmount } = counterSlice.actions;
+export const { increment } = counterSlice.actions;
+
 export const selectCount = (state) => state.counter.value;
 
 export default counterSlice.reducer;
